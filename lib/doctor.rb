@@ -1,12 +1,12 @@
 class Doctor 
   
-  attr_accessor :name, :songs, :genres
+  attr_accessor :name, :appointments, :patients
   
   @@all = []
   
   def initialize(name)
-    @songs = []
-    @genres = []
+    @appointments = []
+    @patients = []
     @name = name
     @@all << self 
   end
@@ -15,8 +15,8 @@ class Doctor
     @@all 
   end
   
-  def new_song(name, genre)
-    Song.new(name,self,genre)
+  def new_appointment(date, patient)
+    Appointment.new(name,self,genre)
   end
   
   
