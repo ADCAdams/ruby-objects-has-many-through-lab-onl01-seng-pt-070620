@@ -15,4 +15,4 @@ class Artist
   
   
   
-  
+end
