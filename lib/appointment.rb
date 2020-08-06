@@ -8,6 +8,10 @@ class Appointment
     @date = date
     @patient = patient
     @doctor = doctor
+    
+    patient.doctors << doctor unless patient.doctors.include? doctor 
+    patient.appointment << self 
+    
     @@all << self 
   end
   
