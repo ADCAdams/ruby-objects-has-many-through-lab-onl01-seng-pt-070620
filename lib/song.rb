@@ -9,7 +9,8 @@ class Song
     @artist = artist 
     @genre = genre
     @@all << self 
-    artist.songs << self 
+    artist.songs << self
+    artist.genre << genre if artist.genre.include?
   end
   
   def self.all 
