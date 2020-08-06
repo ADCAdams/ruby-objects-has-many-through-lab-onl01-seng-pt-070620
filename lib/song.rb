@@ -12,6 +12,7 @@ class Song
     artist.songs << self
     artist.genres << genre unless artist.genres.include?(genre)
     genre.songs << self
+    genre.artist << self
   end
   
   def self.all 
