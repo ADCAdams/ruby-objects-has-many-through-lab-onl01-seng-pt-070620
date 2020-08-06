@@ -10,7 +10,7 @@ class Appointment
     @doctor = doctor
     
     patient.doctors << doctor unless patient.doctors.include? doctor 
-    patient.appointment << self 
+    patient.appointments << self 
     
     @@all << self 
   end
