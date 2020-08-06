@@ -11,7 +11,7 @@ class Appointment
     
     patient.doctors << doctor unless patient.doctors.include? doctor 
     patient.appointments << self 
-    
+    doctor.patients << patient
     @@all << self 
   end
   
